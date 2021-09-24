@@ -185,7 +185,7 @@ img {
   display: none;
   flex-direction: column;
   position: relative;
-  height: 1070px;
+  height: fit-content;
   z-index: 2;
 }
 
