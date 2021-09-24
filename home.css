@@ -1,0 +1,902 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  --webkit-font-smoothing: antialiased;
+  background: #000;
+  color: #999;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+  margin: 0 0.25rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  background: transparent;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.showcase {
+  height: 100%;
+  min-height: 440px;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background: url(./img/joker.jpg) no-repeat center center/cover;
+}
+
+.showcase-top {
+  position: relative;
+  display: flex;
+  height: 90px;
+  align-items: center;
+  z-index: 2;
+}
+
+.showcase-top img {
+  position: relative;
+  height: 37px;
+}
+.vid-container {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.686);
+}
+.video {
+  display: block;
+  height: 300px;
+  z-index: 6;
+}
+
+.m-btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  padding: 12px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ply,
+.pau {
+  transform: translate(-705px, 173px);
+}
+
+.close {
+  transform: translate(-120px, -175px);
+}
+
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.img-container {
+  width: 200px;
+  padding: 25px;
+}
+
+.btn-container {
+  width: 160px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.btn-container .btn {
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+}
+
+.bg-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-container img {
+  z-index: 0;
+}
+
+.showcase-content {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.showcase-content .featured {
+  width: 480px;
+  color: #fff;
+  margin-top: 272px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+.showcase-content p {
+  font-weight: 400;
+  padding: 30px 0;
+}
+
+.play {
+  height: 30px;
+  width: 80px;
+  background: rgb(255, 255, 255);
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.s-films {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: fit-content;
+  z-index: 2;
+}
+
+.s-series {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  height: 1070px;
+  z-index: 2;
+}
+
+.genre {
+  margin: 5px;
+}
+
+.genre h1 {
+  text-align: left;
+
+  height: 35px;
+}
+
+.genre p {
+  text-align: left;
+  padding-top: 10px;
+  width: 35%;
+  padding: 15px 0;
+  color: #fff;
+}
+
+.movie-slide .btn {
+  transition-duration: 0.5s;
+}
+
+.movie-slide .btn:hover {
+  height: 140px;
+  width: 270px;
+}
+
+.movie-slide {
+  display: flex;
+  height: 140px;
+  min-width: 800px;
+  overflow: hidden;
+  margin: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.movie-slide button {
+  height: 130px;
+  width: 19.5%;
+}
+
+/* ----------------------------------------------------Films----------------------------------------------- */
+
+/* Drama */
+
+.movie-slide .fight-club {
+  background-image: url(/img/films/drama/fight-club/small.jpg);
+  background-position: center;
+}
+
+.c-fight-club {
+  display: none;
+  background-image: url(/img/films/drama/fight-club/large.jpg);
+  background-position: center;
+}
+
+.c-kings-speech {
+  display: none;
+  background-image: url(/img/films/drama/kings-speech/large.jpg);
+  background-position: top;
+}
+
+.c-the-prestige {
+  display: none;
+  background-image: url(/img/films/drama/the-prestige/large.jpg);
+  background-position: top;
+}
+
+.c-the-revenant {
+  display: none;
+  background-image: url(/img/films/drama/the-revenant/large.jpg);
+  background-position: center;
+}
+
+.c-social-network {
+  display: none;
+  background-image: url(/img/films/drama/the-social-network/large.jpg);
+  background-position: center;
+}
+
+.movie-slide .kings-speech {
+  background-image: url(/img/films/drama/kings-speech/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .the-prestige {
+  background-image: url(/img/films/drama/the-prestige/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .the-revenant {
+  background-image: url(/img/films/drama/the-revenant/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .the-social-network {
+  background-image: url(/img/films/drama/the-social-network/small.jpg);
+  background-position: center;
+}
+
+/* Thriller */
+
+.c-nightcrawler {
+  display: none;
+  background-image: url(/img/films/thriller/nightcrawler/large.jpg);
+  background-position: center;
+}
+
+.c-science {
+  display: none;
+  background-image: url(/img/films/thriller/the-science-of-the-lambs/large.jpg);
+  background-position: top;
+}
+
+.c-black {
+  display: none;
+  background-image: url(/img/films/thriller/black-swan/large.jpg);
+  background-position: top;
+}
+
+.c-joker {
+  display: none;
+  background-image: url(/img/films/thriller/joker/large.jpg);
+  background-position: center;
+}
+
+.c-quite {
+  display: none;
+  background-image: url(/img/films/thriller/a-quite-place/large.jpg);
+  background-position: center;
+}
+
+.movie-slide .nightcrawler {
+  background-image: url(/img/films/thriller/nightcrawler/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .science {
+  background-image: url(/img/films/thriller/the-science-of-the-lambs/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .black {
+  background-image: url(/img/films/thriller/black-swan/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .joker {
+  background-image: url(/img/films/thriller/joker/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .quite {
+  background-image: url(/img/films/thriller/a-quite-place/small.jpg);
+  background-position: center;
+}
+
+/* Children */
+
+.c-hotel {
+  display: none;
+  background-image: url(/img/films/children/hotel-transylvania/large.jpg);
+  background-position: center;
+}
+
+.c-spirited {
+  display: none;
+  background-image: url(/img/films/children/spirited-away/large.jpg);
+  background-position: top;
+}
+
+.c-up {
+  display: none;
+  background-image: url(/img/films/children/up/large.jpg);
+  background-position: top;
+}
+
+.c-frozen {
+  display: none;
+  background-image: url(/img/films/children/frozen/large.jpg);
+  background-position: center;
+}
+
+.c-despicable {
+  display: none;
+  background-image: url(/img/films/children/despicable-me/large.jpg);
+  background-position: center;
+}
+
+.movie-slide .hotel {
+  background-image: url(/img/films/children/hotel-transylvania/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .spirited {
+  background-image: url(/img/films/children/spirited-away/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .up {
+  background-image: url(/img/films/children/up/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .frozen {
+  background-image: url(/img/films/children/frozen/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .despicable {
+  background-image: url(/img/films/children/despicable-me/small.jpg);
+  background-position: center;
+}
+
+/* Suspense */
+
+.c-shutter {
+  display: none;
+  background-image: url(/img/films/suspense/shutter-island/large.jpg);
+  background-position: center;
+}
+
+.c-seven {
+  display: none;
+  background-image: url(/img/films/suspense/seven/large.jpg);
+  background-position: top;
+}
+
+.c-prisoners {
+  display: none;
+  background-image: url(/img/films/suspense/prisoners/large.jpg);
+  background-position: top;
+}
+
+.c-zodiac {
+  display: none;
+  background-image: url(/img/films/suspense/zodiac/large.jpg);
+  background-position: center;
+}
+
+.c-gone {
+  display: none;
+  background-image: url(/img/films/suspense/gone-girl/large.jpg);
+  background-position: center;
+}
+
+.movie-slide .shutter {
+  background-image: url(/img/films/suspense/shutter-island/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .seven {
+  background-image: url(/img/films/suspense/seven/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .prisoners {
+  background-image: url(/img/films/suspense/prisoners/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .zodiac {
+  background-image: url(/img/films/suspense/zodiac/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .gone {
+  background-image: url(/img/films/suspense/gone-girl/small.jpg);
+  background-position: center;
+}
+
+.movie-card {
+  height: 300px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Romance */
+
+.c-land {
+  display: none;
+  background-image: url(/img/films/romance/la-la-land/large.jpg);
+  background-position: center;
+}
+
+.c-titanic {
+  display: none;
+  background-image: url(/img/films/romance/titanic/large.jpg);
+  background-position: top;
+}
+
+.c-star {
+  display: none;
+  background-image: url(/img/films/romance/a-star-is-born/large.jpg);
+  background-position: top;
+}
+
+.c-notebook {
+  display: none;
+  background-image: url(/img/films/romance/the-notebook/large.jpg);
+  background-position: center;
+}
+
+.c-blue {
+  display: none;
+  background-image: url(/img/films/romance/blue-valentine/large.jpg);
+  background-position: center;
+}
+
+.movie-slide .land {
+  background-image: url(/img/films/romance/la-la-land/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .titanic {
+  background-image: url(/img/films/romance/titanic/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .star {
+  background-image: url(/img/films/romance/a-star-is-born/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .notebook {
+  background-image: url(/img/films/romance/the-notebook/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .blue {
+  background-image: url(/img/films/romance/blue-valentine/small.jpg);
+  background-position: center;
+}
+
+/* ----------------------------------------------------Series---------------------------------------------- */
+
+/* Drama */
+
+.movie-slide .arrested {
+  background-image: url(/img/series/comedies/arrested-development/small.jpg);
+  background-position: center;
+}
+
+.c-arrested {
+  display: none;
+  background-image: url(/img/series/comedies/arrested-development/large.jpg);
+  background-position: center;
+}
+
+.c-curb {
+  display: none;
+  background-image: url(/img/series/comedies/curb-your-enthusiasm/large.jpg);
+  background-position: top;
+}
+
+.c-family {
+  display: none;
+  background-image: url(/img/series/comedies/family-guy/large.jpg);
+  background-position: top;
+}
+
+.c-south {
+  display: none;
+  background-image: url(/img/series/comedies/south-park/large.jpg);
+  background-position: center;
+}
+
+.c-office {
+  display: none;
+  background-image: url(/img/series/comedies/the-office/large.jpg);
+  background-position: center;
+}
+
+.movie-slide .curb {
+  background-image: url(/img/series/comedies/curb-your-enthusiasm/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .family {
+  background-image: url(/img/series/comedies/family-guy/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .south {
+  background-image: url(/img/series/comedies/south-park/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .office {
+  background-image: url(/img/series/comedies/the-office/small.jpg);
+  background-position: center;
+}
+
+/* Crime */
+
+.c-long {
+  display: none;
+  background-image: url(/img/series/crime/long-shot/large.jpg);
+  background-position: center;
+}
+
+.c-making {
+  display: none;
+  background-image: url(/img/series/crime/making-a-murderer/large.jpg);
+  background-position: top;
+}
+
+.c-confession {
+  display: none;
+  background-image: url(/img/series/crime/the-confession-killer/large.jpg);
+  background-position: top;
+}
+
+.c-innocent {
+  display: none;
+  background-image: url(/img/series/crime/the-innocent-man/large.jpg);
+  background-position: center;
+}
+
+.c-staircase {
+  display: none;
+  background-image: url(/img/series/crime/the-staircase/large.jpg);
+  background-position: center;
+}
+
+.movie-slide .long {
+  background-image: url(/img/series/crime/long-shot/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .making {
+  background-image: url(/img/series/crime/making-a-murderer/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .confession {
+  background-image: url(/img/series/crime/the-confession-killer/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .innocent {
+  background-image: url(/img/series/crime/the-innocent-man/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .staircase {
+  background-image: url(/img/series/crime/the-staircase/small.jpg);
+  background-position: center;
+}
+
+/* Children */
+
+.c-arthur {
+  display: none;
+  background-image: url(/img/series/children/arthur/large.jpg);
+  background-position: center;
+}
+
+.c-dora {
+  display: none;
+  background-image: url(/img/series/children/dora-the-explorer/large.jpg);
+  background-position: top;
+}
+
+.c-paw {
+  display: none;
+  background-image: url(/img/series/children/paw-patrol/large.jpg);
+  background-position: top;
+}
+
+.c-peppa {
+  display: none;
+  background-image: url(/img/series/children/peppa-pig/large.jpg);
+  background-position: center;
+}
+
+.c-sponge {
+  display: none;
+  background-image: url(/img/series/children/sponge-bob/large.jpg);
+  background-position: center;
+}
+
+.movie-slide .arthur {
+  background-image: url(/img/series/children/arthur/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .dora {
+  background-image: url(/img/series/children/dora-the-explorer/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .paw {
+  background-image: url(/img/series/children/paw-patrol/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .peppa {
+  background-image: url(/img/series/children/peppa-pig/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .sponge {
+  background-image: url(/img/series/children/sponge-bob/small.jpg);
+  background-position: center;
+}
+
+/* Documentaries */
+
+.c-amanda {
+  display: none;
+  background-image: url(/img/series/documentaries/amanda-knox/large.jpg);
+  background-position: center;
+}
+
+.c-citizenfour {
+  display: none;
+  background-image: url(/img/series/documentaries/citizenfour/large.jpg);
+  background-position: top;
+}
+
+.c-man {
+  display: none;
+  background-image: url(/img/series/documentaries/man-on-wire/large.jpg);
+  background-position: top;
+}
+
+.c-super {
+  display: none;
+  background-image: url(/img/series/documentaries/super-size-me/large.jpg);
+  background-position: center;
+}
+
+.c-tiger {
+  display: none;
+  background-image: url(/img/series/documentaries/tiger-king/large.jpg);
+  background-position: center;
+}
+
+.movie-slide .amanda {
+  background-image: url(/img/series/documentaries/amanda-knox/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .citizenfour {
+  background-image: url(/img/series/documentaries/citizenfour/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .man {
+  background-image: url(/img/series/documentaries/man-on-wire/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .super {
+  background-image: url(/img/series/documentaries/super-size-me/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .tiger {
+  background-image: url(/img/series/documentaries/tiger-king/small.jpg);
+  background-position: center;
+}
+
+.movie-card {
+  height: 300px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Feel Good */
+
+.c-forrest {
+  display: none;
+  background-image: url(/img/series/feel-good/forrest-gump/large.jpg);
+  background-position: center;
+}
+
+.c-good {
+  display: none;
+  background-image: url(/img/series/feel-good/good-will-hunting/large.jpg);
+  background-position: top;
+}
+
+.c-juno {
+  display: none;
+  background-image: url(/img/series/feel-good/juno/large.jpg);
+  background-position: top;
+}
+
+.c-midnight {
+  display: none;
+  background-image: url(/img/series/feel-good/midnight-in-paris/large.jpg);
+  background-position: center;
+}
+
+.c-school {
+  display: none;
+  background-image: url(/img/series/feel-good/school-of-rock/large.jpg);
+  background-position: center;
+}
+
+.movie-slide .forrest {
+  background-image: url(/img/series/feel-good/forrest-gump/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .good {
+  background-image: url(/img/series/feel-good/good-will-hunting/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .juno {
+  background-image: url(/img/series/feel-good/juno/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .midnight {
+  background-image: url(/img/series/feel-good/midnight-in-paris/small.jpg);
+  background-position: center;
+}
+
+.movie-slide .school {
+  background-image: url(/img/series/feel-good/school-of-rock/small.jpg);
+  background-position: center;
+}
+
+.movie-card {
+  height: 300px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.footer-wrapper {
+  position: relative;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  min-width: 190px;
+  height: 146px;
+  width: 100%;
+  font-size: 1em;
+  color: #757575;
+  z-index: 2;
+}
+
+.footer {
+  color: #757575;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 18px 0;
+  width: 90%;
+}
+
+.footer-top {
+  color: #757575;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.footer-top-a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.footer-top-a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  max-width: 1000px;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer-link-item {
+  list-style: none;
+  margin-left: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 16px;
+  display: inline-block;
+  min-width: 100px;
+  width: 24%;
+  padding-right: 12px;
+  vertical-align: top;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #757575;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .showcase-content .featured {
+    width: 80%;
+    margin-top: 75px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 940px) {
+  .genre p {
+    width: 60%;
+  }
+}

@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Home=Netflix</title>
+  </head>
+  <body>
+    <header>
+      <div class="showcase">
+        <div class="wrapper">
+          <div class="vid-container" id="vid">
+            <video id="video" height="400px">
+              <source src="/vids/video.mp4" type="video/mp4" />
+            </video>
+            <button onclick="playVid()" type="button" class="m-btn ply">
+              <i class="fas fa-play"></i>
+            </button>
+            <button onclick="pauseVid()" type="button" class="m-btn pau">
+              <i class="fas fa-pause"></i>
+            </button>
+            <br />
+
+            <button type="button" class="m-btn close" id="close">
+              <i class="far fa-times-circle"></i>
+            </button>
+          </div>
+          <div class="bg-container">
+            <div class="overlay"></div>
+          </div>
+          <div class="showcase-top">
+            <div class="img-container">
+              <a href="index.html">
+                <img src="/img/logo.png" alt="" />
+              </a>
+            </div>
+            <div class="btn-container">
+              <button class="btn series">Series</button>
+              <button class="btn films">Films</button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <div class="featured">
+              <h1>Watch Joker Now</h1>
+              <p>
+                Forever alone in a crowd, failed comedian Arthur Fleck seeks
+                connection as he walks the streets of Gotham City. Arthur wears
+                two masks -- the one he paints for his day job as a clown, and
+                the guise he projects in a futile attempt to feel like he's part
+                of the world around him.
+              </p>
+              <button class="btn play" id="p1">Play</button>
+            </div>
+          </div>
+        </div>
+        <section class="s-films">
+          <div class="genre">
+            <h1>Drama</h1>
+            <div class="movie-slide">
+              <button class="fight-club btn" id="btn-fight"></button>
+              <button class="kings-speech btn" id="btn-kings"></button>
+              <button class="the-prestige btn" id="btn-prestige"></button>
+              <button class="the-revenant btn" id="btn-revenant"></button>
+              <button
+                class="the-social-network btn"
+                id="btn-social-network"
+              ></button>
+            </div>
+            <div class="movie-card c-fight-club" id="c-fight-club">
+              <div class="title">
+                <h1>Fight Club</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p2">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-kings-speech" id="c-kings-speech">
+              <div class="title">
+                <h1>Kings Speech</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p3">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-the-prestige" id="c-the-prestige">
+              <div class="title">
+                <h1>The Prestige</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p4">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-the-revenant" id="c-the-revenant">
+              <div class="title">
+                <h1>The Revenant</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p5">Play</button>
+              </div>
+            </div>
+            <div class="movie-card c-social-network" id="c-social-network">
+              <div class="title">
+                <h1>The Social Network</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p6">Play</button>
+              </div>
+            </div>
+          </div>
+          <div class="genre">
+            <h1>Thriller</h1>
+            <div class="movie-slide">
+              <button class="nightcrawler btn" id="btn-nightcrawler"></button>
+              <button class="science btn" id="btn-science"></button>
+              <button class="black btn" id="btn-black"></button>
+              <button class="joker btn" id="btn-joker"></button>
+              <button class="quite btn" id="btn-quite"></button>
+            </div>
+            <div class="movie-card c-nightcrawler" id="c-nightcrawler">
+              <div class="title">
+                <h1>Nightcrawler</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p7">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-science" id="c-science">
+              <div class="title">
+                <h1>The Science Of The Lambs</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p8">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-black" id="c-black">
+              <div class="title">
+                <h1>Black Swan</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p9">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-joker" id="c-joker">
+              <div class="title">
+                <h1>Joker</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p10">Play</button>
+              </div>
+            </div>
+            <div class="movie-card c-quite" id="c-quite">
+              <div class="title">
+                <h1>A Quite Place</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p11">Play</button>
+              </div>
+            </div>
+          </div>
+          <div class="genre">
+            <h1>Children</h1>
+            <div class="movie-slide">
+              <button class="hotel btn" id="btn-hotel"></button>
+              <button class="spirited btn" id="btn-spirited"></button>
+              <button class="up btn" id="btn-up"></button>
+              <button class="frozen btn" id="btn-frozen"></button>
+              <button class="despicable btn" id="btn-despicable"></button>
+            </div>
+            <div class="movie-card c-hotel" id="c-hotel">
+              <div class="title">
+                <h1>Hotel Transylvania</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p12">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-spirited" id="c-spirited">
+              <div class="title">
+                <h1>Spirited Away</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p13">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-up" id="c-up">
+              <div class="title">
+                <h1>Up</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p14">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-frozen" id="c-frozen">
+              <div class="title">
+                <h1>Frozen</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p15">Play</button>
+              </div>
+            </div>
+            <div class="movie-card c-despicable" id="c-despicable">
+              <div class="title">
+                <h1>Despicable Me</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p16">Play</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="genre">
+            <h1>Suspense</h1>
+            <div class="movie-slide">
+              <button class="shutter btn" id="btn-shutter"></button>
+              <button class="seven btn" id="btn-seven"></button>
+              <button class="prisoners btn" id="btn-prisoners"></button>
+              <button class="zodiac btn" id="btn-zodiac"></button>
+              <button class="gone btn" id="btn-gone"></button>
+            </div>
+            <div class="movie-card c-shutter" id="c-shutter">
+              <div class="title">
+                <h1>Shutter Island</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p17">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-seven" id="c-seven">
+              <div class="title">
+                <h1>Seven</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p18">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-prisoners" id="c-prisoners">
+              <div class="title">
+                <h1>Prisoners</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p19">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-zodiac" id="c-zodiac">
+              <div class="title">
+                <h1>Zodiac</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p20">Play</button>
+              </div>
+            </div>
+            <div class="movie-card c-gone" id="c-gone">
+              <div class="title">
+                <h1>Gone Girl</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p21">Play</button>
+              </div>
+            </div>
+          </div>
+          <div class="genre">
+            <h1>Romance</h1>
+            <div class="movie-slide">
+              <button class="land btn" id="btn-land"></button>
+              <button class="titanic btn" id="btn-titanic"></button>
+              <button class="star btn" id="btn-star"></button>
+              <button class="notebook btn" id="btn-notebook"></button>
+              <button class="blue btn" id="btn-blue"></button>
+            </div>
+            <div class="movie-card c-land" id="c-land">
+              <div class="title">
+                <h1>La La Land</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p22">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-titanic" id="c-titanic">
+              <div class="title">
+                <h1>Titanic</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p23">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-star" id="c-star">
+              <div class="title">
+                <h1>A Star Is Born</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p24">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-notebook" id="c-notebook">
+              <div class="title">
+                <h1>The Notebook</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p25">Play</button>
+              </div>
+            </div>
+            <div class="movie-card c-blue" id="c-blue">
+              <div class="title">
+                <h1>Blue Valentine</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p26">Play</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-series">
+          <div class="genre">
+            <h1>Comedies</h1>
+            <div class="movie-slide">
+              <button class="arrested btn" id="btn-arrested"></button>
+              <button class="curb btn" id="btn-curb"></button>
+              <button class="family btn" id="btn-family"></button>
+              <button class="south btn" id="btn-south"></button>
+              <button class="office btn" id="btn-office"></button>
+            </div>
+            <div class="movie-card c-arrested" id="c-arrested">
+              <div class="title">
+                <h1>Arrested Development</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p27">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-curb" id="c-curb">
+              <div class="title">
+                <h1>Curb Your Enthusiasm</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p28">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-family" id="c-family">
+              <div class="title">
+                <h1>Family Guy</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p29">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-south" id="c-south">
+              <div class="title">
+                <h1>South Park</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p30">Play</button>
+              </div>
+            </div>
+            <div class="movie-card c-office" id="c-office">
+              <div class="title">
+                <h1>The Office</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p31">Play</button>
+              </div>
+            </div>
+          </div>
+          <div class="genre">
+            <h1>Crime</h1>
+            <div class="movie-slide">
+              <button class="long btn" id="btn-long"></button>
+              <button class="making btn" id="btn-making"></button>
+              <button class="confession btn" id="btn-confession"></button>
+              <button class="innocent btn" id="btn-innocent"></button>
+              <button class="staircase btn" id="btn-staircase"></button>
+            </div>
+            <div class="movie-card c-long" id="c-long">
+              <div class="title">
+                <h1>Long Shot</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p32">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-making" id="c-making">
+              <div class="title">
+                <h1>Making A Murderer</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p33">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-confession" id="c-confession">
+              <div class="title">
+                <h1>The Confession Killer</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p34">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-innocent" id="c-innocent">
+              <div class="title">
+                <h1>The Innocent Man</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p35">Play</button>
+              </div>
+            </div>
+            <div class="movie-card c-staircase" id="c-staircase">
+              <div class="title">
+                <h1>The Staircase</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p36">Play</button>
+              </div>
+            </div>
+          </div>
+          <div class="genre">
+            <h1>Children</h1>
+            <div class="movie-slide">
+              <button class="arthur btn" id="btn-arthur"></button>
+              <button class="dora btn" id="btn-dora"></button>
+              <button class="paw btn" id="btn-paw"></button>
+              <button class="peppa btn" id="btn-peppa"></button>
+              <button class="sponge btn" id="btn-sponge"></button>
+            </div>
+            <div class="movie-card c-arthur" id="c-arthur">
+              <div class="title">
+                <h1>Arthur</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p37">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-dora" id="c-dora">
+              <div class="title">
+                <h1>Dora The Explorer</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p38">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-paw" id="c-paw">
+              <div class="title">
+                <h1>Paw Patrol</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p39">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-peppa" id="c-peppa">
+              <div class="title">
+                <h1>Peppa Pig</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p40">Play</button>
+              </div>
+            </div>
+            <div class="movie-card c-sponge" id="c-sponge">
+              <div class="title">
+                <h1>Sponge Bob</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p41">Play</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="genre">
+            <h1>Documentaries</h1>
+            <div class="movie-slide">
+              <button class="amanda btn" id="btn-amanda"></button>
+              <button class="citizenfour btn" id="btn-citizenfour"></button>
+              <button class="man btn" id="btn-man"></button>
+              <button class="super btn" id="btn-super"></button>
+              <button class="tiger btn" id="btn-tiger"></button>
+            </div>
+            <div class="movie-card c-amanda" id="c-amanda">
+              <div class="title">
+                <h1>Amanda Knox</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p42">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-citizenfour" id="c-citizenfour">
+              <div class="title">
+                <h1>Citizen Four</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p43">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-man" id="c-man">
+              <div class="title">
+                <h1>Man On Wire</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p44">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-super" id="c-super">
+              <div class="title">
+                <h1>Super Size Me</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p45">Play</button>
+              </div>
+            </div>
+            <div class="movie-card c-tiger" id="c-tiger">
+              <div class="title">
+                <h1>Tiger King</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p46">Play</button>
+              </div>
+            </div>
+          </div>
+          <div class="genre">
+            <h1>Feel Good</h1>
+            <div class="movie-slide">
+              <button class="forrest btn" id="btn-forrest"></button>
+              <button class="good btn" id="btn-good"></button>
+              <button class="juno btn" id="btn-juno"></button>
+              <button class="midnight btn" id="btn-midnight"></button>
+              <button class="school btn" id="btn-school"></button>
+            </div>
+            <div class="movie-card c-forrest" id="c-forrest">
+              <div class="title">
+                <h1>Forrest Gump</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p47">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-good" id="c-good">
+              <div class="title">
+                <h1>Good Will Hunting</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p48">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-juno" id="c-juno">
+              <div class="title">
+                <h1>Juno</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p49">Play</button>
+              </div>
+            </div>
+
+            <div class="movie-card c-midnight" id="c-midnight">
+              <div class="title">
+                <h1>Midnight In Paris</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p50">Play</button>
+              </div>
+            </div>
+            <div class="movie-card c-school" id="c-school">
+              <div class="title">
+                <h1>School Of Rock</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta necessitatibus minus error libero sed quisquam,
+                  consectetur assumenda architecto culpa dignissimos laudantium,
+                  aliquam aspernatur explicabo dolores quam velit asperiores
+                  ipsam. Quia a optio pariatur totam saepe.
+                </p>
+                <button class="btn play" id="p51">Play</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <footer class="footer-wrapper">
+      <div class="footer-divider"></div>
+      <div class="footer">
+        <p class="footer-top">
+          Questions Call?
+          <a href="#" class="footer-top-a">Contact us.</a>
+        </p>
+        <ul class="footer-links">
+          <li class="footer-link-item">
+            <a href="#" class="footer-link"><span></span>FAQ</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link"><span>Help Centre</span></a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link"><span>Terms of use</span></a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link"><span>Privacy</span></a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link"><span>Cookie Preferences</span></a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link"
+              ><span>Corporate Information</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/44cf28c6de.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="pagehome.js"></script>
+  </body>
+</html>
